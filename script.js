@@ -8,7 +8,8 @@ function print56(arrayOfNumbers) {
     for (let i = 0; i < arrayOfNumbers.length; i++) {
         const number = arrayOfNumbers[i];
         if (number === 56) {
-            newArray1.push(number);
+            newArray1.push(number); 
+            break; 
         } 
     } 
 
@@ -24,7 +25,7 @@ function from56(arrayOfNumbers) {
 
   for (let i = 0; i < arrayOfNumbers.length; i++) {
       const number = arrayOfNumbers[i]; 
-      if (number > 56) {
+      if (i > 3) {
           newArray2.push(number);
       }
 
@@ -36,6 +37,15 @@ function from56(arrayOfNumbers) {
 console.log('valori successivi a 56: ', from56(arrayOfNumbers)); 
 
 //  stampare tutti valori tranne 56; 
+
+// for (let i = 0; i < array.length; i++) {
+//     if (array[i] == 56) {
+//         continue;
+//     } 
+
+// }
+
+// console.log('tutti valori tranne 56: ', arrayOfNumbers);  
 
 function printAllBut56(arrayOfNumbers) {
     const newArray3 = []; 
